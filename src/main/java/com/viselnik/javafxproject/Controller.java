@@ -53,7 +53,7 @@ public class Controller  implements Initializable {
     @FXML
 
     public void clickSend() throws IOException, InterruptedException {
-        String API_KEY = "9e84cfbba49c7d2328df79f2";
+        String API_KEY = "YOUR-API-KEY";
         String url_str = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/pair/" + fromBox.getValue() + "/" + toCode.getValue() + "/" + Amount.getText() + "";
         URL url = new URL(url_str);
         HttpURLConnection request = (HttpURLConnection) url.openConnection();
