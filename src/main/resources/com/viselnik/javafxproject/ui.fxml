@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="416.0" style="-fx-background-color: #1D1B32;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.viselnik.javafxproject.Controller">
+   <children>
+      <Text fill="WHITE" layoutX="52.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currency Converter">
+         <font>
+            <Font name="Poppins SemiBold" size="31.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="91.0" layoutY="267.0" prefHeight="43.0" prefWidth="233.0" style="-fx-background-color: #211E41; -fx-effect: dropshadow(three-pass-box, rgba(54, 50, 90, 0.8), 10, 0.5, 0, 0), dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0.3, 0, 0);; -fx-background-radius: 25pt;">
+         <children>
+            <JFXComboBox fx:id="toCode" layoutX="14.0" layoutY="2.0" prefHeight="25.0" prefWidth="195.0" stylesheets="@style.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="92.0" layoutY="138.0" prefHeight="43.0" prefWidth="233.0" style="-fx-background-color: #211E41; -fx-effect: dropshadow(three-pass-box, rgba(54, 50, 90, 0.8), 10, 0.5, 0, 0), dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 10, 0.3, 0, 0);; -fx-background-radius: 25pt;">
+         <children>
+            <JFXComboBox fx:id="fromBox" layoutX="14.0" layoutY="2.0" prefHeight="25.0" prefWidth="195.0" stylesheets="@style.css" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="58.0" fitWidth="70.0" layoutX="180.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@convert.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="167.0" layoutY="195.0" onAction="#clickSend" prefHeight="65.0" prefWidth="83.0" text="    " />
+      <ImageView fitHeight="65.0" fitWidth="58.0" layoutX="275.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@github.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="65.0" fitWidth="58.0" layoutX="344.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@linkedin.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="194.0" layoutY="107.0" text="Label" />
+      <TextField fx:id="Amount" alignment="CENTER" layoutX="114.0" layoutY="92.0" promptText="Enter Value" style="-fx-background-color: #1D1B32; -fx-font-size: 15;" stylesheets="@style.css" />
+      <JFXButton layoutX="275.0" layoutY="375.0" onAction="#clickGithub" prefHeight="58.0" prefWidth="58.0" text="    " />
+      <Label fx:id="output" alignment="CENTER" layoutX="112.0" layoutY="323.0" prefHeight="28.0" prefWidth="195.0" textFill="WHITE">
+         <font>
+            <Font name="Poppins Medium" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="344.0" layoutY="375.0" onAction="#clickLinkedin" prefHeight="58.0" prefWidth="58.0" text="    " />
+   </children>
+</AnchorPane>

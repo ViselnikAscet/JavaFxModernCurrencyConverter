@@ -1,0 +1,9 @@
+.text-input {
+    -fx-text-fill: #ffffff; /* Kırmızı renk */
+}
+
+
+.combo-box .list-cell{
+    -fx-text-fill: #ffffff; /* Kırmızı renk */
+    -fx-background-color: #393a65;
+}
